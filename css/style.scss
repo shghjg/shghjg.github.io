@@ -13,4 +13,12 @@
 
 .banner {
 	background-image: url(../images/banner-bg.jpg);
+	min-height: 400px;
+}
+
+.banner-info {
+
+	p {
+		text-transform: none;
+	}
 }
