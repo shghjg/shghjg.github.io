@@ -24,7 +24,7 @@ body a {
 .header {
 	background: #fff;
 	padding: 2em 0;
-	border-top: 3px solid #2ABB9B;
+	border-top: 3px solid $brand_color;
 }
 .navbar-brand {
 	font-size: 32px;
@@ -34,10 +34,10 @@ body a {
 	padding: 5px;
 }
 .navbar-brand:hover {
-	color: #2ABB9B;
+	color: $brand_color;
 }
 .navbar-brand .fa {
-	color: #2abb9b;
+	color: $brand_color;
 }
 .menu {
 	float: right;
@@ -61,14 +61,14 @@ body a {
 	letter-spacing: 1px;
 }
 #nav .current a {
-	color: #2ABB9B;
+	color: $brand_color;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
 .menu li a:hover, .menu li.active a {
-	color: #2ABB9B;
+	color: $brand_color;
 	background: #fff !important;
 }
 .toggleMenu {
@@ -195,12 +195,12 @@ body a {
 	line-height: 0.6em;
 }
 .featured_content {
-	background: #2ABB9B;
+	background: $brand_color;
 }
 .feature_grid1 {
 	width: 23.5%;
 	margin-right: 2em;
-	border-right: 1px solid #5fccb4;
+	border-right: 1px solid lighten($brand_color, 15);
 	padding: 4em 2em 4em 0;
 }
 .feature_grid2 {
@@ -208,7 +208,7 @@ body a {
 	padding: 4em 0;
 }
 .feature_grid1 .fa, .feature_grid2 .fa {
-	color: #e5e52d;
+	color: $sub_color;
 }
 h3.m_1 {
 	padding: 0.8em 0;
@@ -221,7 +221,7 @@ h3.m_1 a {
 	text-shadow: 1px 1px #4ca390;
 }
 h3.m_1 a:hover {
-	color: #e5e52d;
+	color: $sub_color;
 }
 p.m_2 {
 	color: #e9f8f5;
@@ -235,7 +235,7 @@ p.m_2 {
 	padding: 6px 20px;
 	font-size: 1em;
 	cursor: pointer;
-	background: #2ABB9B;
+	background: $brand_color;
 	color: #fff;
 	font-weight: 500;
 	text-decoration: none;
@@ -244,7 +244,7 @@ p.m_2 {
 	border-radius: 5px;
 }
 .banner_btn:hover {
-	background: #22967c;
+	background: $sub_color;
 	color: #fff;
 	text-decoration: none;
 }
@@ -253,7 +253,7 @@ p.m_2 {
 	padding: 6px 20px;
 	font-size: 1em;
 	cursor: pointer;
-	background: #5fccb4;
+	background: lighten($brand_color, 15);
 	color: #fff;
 	font-weight: 500;
 	text-decoration: none;
@@ -262,7 +262,7 @@ p.m_2 {
 	border-radius: 5px;
 }
 .feature_btn:hover {
-	background: #e5e52d;
+	background: $sub_color;
 	color: #555;
 	text-decoration: none;
 }
@@ -315,11 +315,11 @@ a:focus {
 	outline: 0px;
 }
 .fa {
-	color: #2ABB9B;
+	color: $brand_color;
 }
 .footer_bottom {
 	padding: 2em 0;
-	background: #2ABB9B;
+	background: $brand_color;
 }
 .copy {
 	text-align: center;
@@ -333,7 +333,7 @@ a:focus {
 	border-bottom: 1px dotted;
 }
 .copy p a:hover {
-	color: #e5e52d;
+	color: $sub_color;
 	border-bottom: 1px solid;
 	text-decoration: none;
 }
@@ -386,7 +386,7 @@ h3.m_2 {
 	padding-bottom: 50px;
 }
 .service_box .fa {
-	color: #2ABB9B;
+	color: $brand_color;
 }
 .service_box h2 {
 	font-size: 1.6em;
@@ -498,7 +498,7 @@ h3.m_2 {
 	width: 18px;
 	height: 18px;
 	margin-right: 5px;
-	color: #2ABB9B;
+	color: $brand_color;
 	text-align: center;
 	border-radius: 50%;
 	margin-left: 6px;
@@ -521,8 +521,8 @@ h3.m_2 {
 }
 a.social-icon:hover, a.social-icon:active, a.social-icon:focus {
 	text-decoration: none;
-	color: #e5e52d;
-	border-color: #e5e52d;
+	color: $sub_color;
+	border-color: $sub_color;
 }
 .contact {
 	padding-top: 1em;
@@ -593,7 +593,7 @@ a.social-icon:hover, a.social-icon:active, a.social-icon:focus {
 	font-size: 1em;
 	cursor: pointer;
 	border: none;
-	background: #2ABB9B;
+	background: $brand_color;
 	color: #fff;
 	text-decoration: none;
 	outline: none;
@@ -608,7 +608,7 @@ a.social-icon:hover, a.social-icon:active, a.social-icon:focus {
 }
 .submit:hover {
 	text-decoration: none;
-	background: #22967c;
+	background: $sub_color;
 	color: #fff;
 }
 
