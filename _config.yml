@@ -12,5 +12,10 @@ sass:
   sass_dir: _sass
   style: :compressed
 
+images_dir: images
+css_dir: css
+js_dir: js
+fonts_dir: fonts
+
 # Build settings
 markdown: kramdown
