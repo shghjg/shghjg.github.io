@@ -7,6 +7,34 @@
 @import "font-awesome";
 @import "one";
 
+p {
+	font-weight: 400;
+}
+
+small {
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+
+	small, .small {
+		font-weight: 300;
+	}
+}
+
+// .header {
+
+// 	.menu {
+
+// 		li {
+
+// 			a {
+// 				font-weight: 300;
+// 			}
+// 		}
+// 	}
+// }
+
 .navbar-brand {
 	font-weight: 400;
 }
@@ -19,6 +47,8 @@
 .banner-info {
 
 	p {
+		color: #fff;
+		font-weight: 400;
 		text-transform: none;
 	}
 }
@@ -58,6 +88,13 @@ h3.m_1 {
 		img {
 			max-width: 100%;
 		}
+	}
+}
+
+.highlight-info {
+
+	p {
+		margin-bottom: 1em;
 	}
 }
 
