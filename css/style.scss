@@ -22,6 +22,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	}
 }
 
+table, .table {
+	border-bottom: 1px solid #ddd;
+}
+
 // .header {
 
 // 	.menu {
@@ -92,10 +96,15 @@ h3.m_1 {
 }
 
 .highlight-info {
+	margin-top: 30px;
 
 	p {
 		margin-bottom: 1em;
 	}
+}
+
+.contact {
+	margin-top: 30px;
 }
 
 .contact_top {
