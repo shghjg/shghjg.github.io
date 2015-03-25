@@ -70,6 +70,7 @@ body a {
 .menu li a:hover, .menu li.active a {
 	color: $brand_color;
 	// background: #fff !important;
+	background: transparent;
 }
 .toggleMenu {
 	display: none;
