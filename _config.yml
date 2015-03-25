@@ -12,10 +12,19 @@ sass:
   sass_dir: _sass
   style: :compressed
 
+gems:
+  - jekyll-compass
+
+# Build settings
+markdown: kramdown
+
 images_dir: images
 css_dir: css
 js_dir: js
 fonts_dir: fonts
 
-# Build settings
-markdown: kramdown
+ch:
+  company_name: 上海古贺精工有限公司
+
+en:
+  company_name: Shanghai Guhe Precision Work Co. Ltd.

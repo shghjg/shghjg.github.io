@@ -69,7 +69,7 @@ body a {
 }
 .menu li a:hover, .menu li.active a {
 	color: $brand_color;
-	background: #fff !important;
+	// background: #fff !important;
 }
 .toggleMenu {
 	display: none;
@@ -90,7 +90,8 @@ body a {
 	list-style: none;
 }
 
-@media screen and (max-width:800px) {
+// @media screen and (max-width:800px) {
+@media screen and (max-width:767px) {
 .menu {
 	margin: 10px 0;
 }

@@ -1,8 +1,9 @@
----
----
-
+@charset "UTF-8";
+@import "compass";
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "bootstrap";
 @import "variables";
-@import "bootstrap.min";
 @import "flexslider";
 @import "font-awesome";
 @import "one";
@@ -23,24 +24,46 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 table, .table {
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $gray;
 }
 
-// .header {
+.header {
+	padding-top: 1.25em;
+	padding-bottom: 1em;
+}
 
-// 	.menu {
+.site-title {
+	// overflow: hidden;
+	// float: left;
+}
 
-// 		li {
+.site-logo {
+	float: left;
+	margin-right: 10px;
+}
 
-// 			a {
-// 				font-weight: 300;
-// 			}
-// 		}
-// 	}
-// }
+.site-title-span {
+	display: block;
+	line-height: 1;
+	padding-left: 40px;
+	padding-right: 45px;
+	// white-space: nowrap;
+
+	strong {
+		display: block;
+		font-weight: 400;
+	}
+
+	small {
+		display: block;
+		font-size: 60%;
+		margin-top: 0.25em;
+	}
+}
 
 .navbar-brand {
 	font-weight: 400;
+	height: auto;
 }
 
 .banner {
@@ -117,6 +140,18 @@ h3.m_1 {
 	min-height: 130px;
 }
 
+@media (max-width: 991px){
+
+	.banner {
+		min-height: 320px;
+		padding-bottom: 50px;
+	}
+
+	.navbar-brand {
+		font-size: 30px;
+	}
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 
 	.header {
@@ -127,15 +162,49 @@ h3.m_1 {
 	}
 }
 
-@media (max-width: 991px){
+@media screen and (max-width:767px) {
 
-	.banner {
-		min-height: 320px;
-		padding-bottom: 50px;
+	.header {
+		position: relative;
+	}
+
+	.menu {
+
+		.toggleMenu {
+			position: absolute;
+			top: 50%;
+			right: 15px;
+			margin-top: -16px;
+		}
+
+		.nav {
+			border: 0;
+			background: #fff;
+			top: 100%;
+			margin-top: -10px;
+			@include box-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+			@include border-radius(4px);
+
+			li {
+
+				a {
+					border-top-color: $gray;
+					background: transparent;
+
+					&:hover {
+						background: transparent;
+					}
+				}
+			}
+		}
 	}
 }
 
 @media (max-width: 767px){
+
+	.navbar-brand {
+		font-size: 28px;
+	}
 
 	.banner {
 		min-height: 270px;
@@ -160,13 +229,6 @@ h3.m_1 {
 	}
 }
 
-@media (max-width: 480px){
-
-	.banner {
-		min-height: 200px;
-	}
-}
-
 @media (max-width:640px) and (min-width:481px) {
 
 	.content_white p {
@@ -174,8 +236,25 @@ h3.m_1 {
 	}
 }
 
-@media (max-width:480px) and (min-width:321px) {
+@media (max-width: 480px){
 
+	.banner {
+		min-height: 200px;
+	}
+
+	.navbar-brand {
+		font-size: 24px;
+	}
+}
+
+@media (max-width:480px) and (min-width:321px) {
+}
+
+@media (max-width:400px) {
+
+	.navbar-brand {
+		font-size: 20px;
+	}
 }
 
 @media (max-width:320px) {
