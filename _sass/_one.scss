@@ -612,7 +612,8 @@ a.social-icon:hover, a.social-icon:active, a.social-icon:focus {
 	color: #fff;
 }
 
-@media (max-width:1024px) {
+// @media (max-width:1024px) {
+@media (max-width:991px) {
 .feature_grid1 {
 	width: 23%;
 }
@@ -633,7 +634,8 @@ a.social-icon:hover, a.social-icon:active, a.social-icon:focus {
 }
 }
 
-@media (max-width:800px) {
+// @media (max-width:800px) {
+@media (max-width:767px) {
 .header {
 	padding: 1em 0;
 }
