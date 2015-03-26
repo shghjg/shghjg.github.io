@@ -34,6 +34,7 @@ table, .table {
 .header {
 	padding-top: 1.25em;
 	padding-bottom: 1em;
+	position: relative;
 }
 
 .site-title {
@@ -43,19 +44,20 @@ table, .table {
 
 .site-logo {
 	float: left;
-	margin-right: 10px;
+	width: 55px;
 }
 
 .site-title-span {
 	display: block;
 	line-height: 1;
-	padding-left: 40px;
+	padding-left: 65px;
 	padding-right: 45px;
 	// white-space: nowrap;
 
 	strong {
 		display: block;
 		font-weight: 400;
+		white-space: nowrap;
 	}
 
 	small {
@@ -68,6 +70,14 @@ table, .table {
 .navbar-brand {
 	font-weight: 400;
 	height: auto;
+}
+
+.toggleMenu {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	margin-top: -16px;
+	font-size: 1.5em;
 }
 
 .banner {
@@ -167,6 +177,14 @@ h3.m_1 {
 		font-size: 30px;
 	}
 
+	.site-logo {
+		width: 52px;
+	}
+
+	.site-title-span {
+		padding-left: 62px;
+	}
+
 	.feature_grid {
 
 		h3.m_1 {
@@ -197,19 +215,7 @@ h3.m_1 {
 
 @media screen and (max-width:767px) {
 
-	.header {
-		position: relative;
-	}
-
 	.menu {
-
-		.toggleMenu {
-			position: absolute;
-			top: 50%;
-			right: 15px;
-			margin-top: -16px;
-			font-size: 1.5em;
-		}
 
 		.nav {
 			border: 0;
@@ -235,6 +241,14 @@ h3.m_1 {
 }
 
 @media (max-width: 767px){
+
+	.site-logo {
+		width: 48px;
+	}
+
+	.site-title-span {
+		padding-left: 58px;
+	}
 
 	.navbar-brand {
 		font-size: 28px;
@@ -274,6 +288,14 @@ h3.m_1 {
 
 @media (max-width: 480px){
 
+	.site-logo {
+		width: 42px;
+	}
+
+	.site-title-span {
+		padding-left: 50px;
+	}
+
 	.banner {
 		min-height: 200px;
 	}
@@ -297,6 +319,14 @@ h3.m_1 {
 }
 
 @media (max-width:400px) {
+
+	.site-logo {
+		width: 32px;
+	}
+
+	.site-title-span {
+		padding-left: 38px;
+	}
 
 	.navbar-brand {
 		font-size: 20px;
