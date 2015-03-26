@@ -11,6 +11,8 @@ $(document).ready(function() {
 	$(".toggleMenu").click(function(e) {
 		e.preventDefault();
 		$(this).toggleClass("active");
+		$(this).children('.fa').toggleClass('fa-bars');
+		$(this).children('.fa').toggleClass('fa-close');
 		$(".nav").toggle();
 	});
 	adjustMenu();
