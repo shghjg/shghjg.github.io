@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ site.title }}</title>
+<link href="{{ site.baseurl }}/{{ site.css_dir }}/style.css" rel="stylesheet" />
+<script src="{{ site.baseurl }}/{{ site.js_dir }}/jquery.min.js"></script>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+</head>
+<body id="top">
+
+<div class="header">
+	<div class="container">
+		<h1 class="site-title">
+			<a class="navbar-brand" href="{{ site.baseurl }}/">
+				<i class="fa fa-cog site-logo"></i>
+				<span class="site-title-span">
+					<strong>{{ site.ch.company_name }}</strong>
+					<small>{{ site.en.company_name }}</small>
+				</span>
+			</a>
+		</h1>
+		<div class="menu"> <a class="toggleMenu" href="#"><img src="{{ site.baseurl }}/{{ site.images_dir }}/nav_icon.png" alt="" /> </a>
+			<ul class="nav" id="nav">
+				<li class="current"><a href="{{ site.baseurl }}/#top">Home</a></li>
+				<li><a href="{{ site.baseurl }}/#business">Business</a></li>
+				<li><a href="{{ site.baseurl }}/#company">Company</a></li>
+				<li><a href="{{ site.baseurl }}/#contact">Contact</a></li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+	</div>
+</div>
