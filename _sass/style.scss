@@ -120,6 +120,21 @@ h3.m_1 {
 	}
 }
 
+.service_box {
+	padding-bottom: 30px;
+
+	h3 {
+		font-size: 20px;
+		line-height: 32px;
+		padding-left: 38px;
+	}
+
+	p {
+		clear: both;
+		font-weight: 300;
+	}
+}
+
 .gallery {
 	background: $light_gray;
 	padding-top: 25px;
@@ -190,6 +205,10 @@ h3.m_1 {
 		h3.m_1 {
 			font-size: 20px;
 		}
+	}
+
+	.service_box {
+		padding-bottom: 20px;
 	}
 
 	.gallery {
@@ -271,6 +290,10 @@ h3.m_1 {
 		}
 	}
 
+	.service_box {
+		padding-bottom: 0;
+	}
+
 	.contact_details {
 
 		&:last-child {
@@ -302,6 +325,13 @@ h3.m_1 {
 
 	.navbar-brand {
 		font-size: 24px;
+	}
+
+	.service_box {
+
+		h3 {
+			font-size: 16px;
+		}
 	}
 
 	.history-table {
