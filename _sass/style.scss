@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 	small, .small {
 		font-weight: 300;
+		color: inherit;
 	}
 }
 
@@ -37,11 +38,6 @@ table, .table {
 	position: relative;
 }
 
-.site-title {
-	// overflow: hidden;
-	// float: left;
-}
-
 .site-logo {
 	float: left;
 	width: 55px;
@@ -52,7 +48,6 @@ table, .table {
 	line-height: 1;
 	padding-left: 65px;
 	padding-right: 45px;
-	// white-space: nowrap;
 
 	strong {
 		display: block;
@@ -87,6 +82,12 @@ table, .table {
 }
 
 .banner-info {
+
+	h1 {
+		color: #fff;
+		font-size: 36px;
+		font-weight: bold;
+	}
 
 	p {
 		color: #fff;
