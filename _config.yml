@@ -1,20 +1,17 @@
 # Site settings
 title: 上海古贺精工有限公司 - Shanghai Guhe Precision Work Co. Ltd.
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+email: guhe@shghjg.com.cn
+description: 半导体装置用工程塑料零件加工，电子、电器工程塑料零件加工，医疗设备器材用工程塑料零件加工，通信设备器材用工程零件加工，其他各类试制品加工
 baseurl: ""
-url: "http://shghjg.github.io"
+url: "http://shghjg.net"
 
 # Build settings
 markdown: kramdown
 
-images_dir: images
-css_dir: css
-js_dir: js
-fonts_dir: fonts
+images_dir: /images
+css_dir: /css
+js_dir: /js
+fonts_dir: /fonts
 
 ch:
   company_name: 上海古贺精工有限公司
