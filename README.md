@@ -1,1 +1,1 @@
-[http://shghjg.github.io](http://shghjg.github.io)
+[http://shghjg.net](http://shghjg.net)
