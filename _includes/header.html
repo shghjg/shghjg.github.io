@@ -5,15 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ site.title }}</title>
-<meta name="description" content="{{ site.description }}">
-<meta property="og:description" content="{{ site.description }}">
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:type" content="{% if page.path == 'index.html' %}website{% else %}article{% endif %}">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:site_name" content="{{ site.title }}">
-<link rel="canonical" href="{{ site.url }}{% if page.path != 'index.html' %}{{ page.path }}{% endif %}">
-<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{% if page.path != 'index.html' %}/{{ page.path }}{% endif %}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.images_dir }}/ogp.png">
-<link rel="author" href="http://kiteretz.com">
+<link rel="author" href="http://kiteretz.com/">
 <link rel="shortcut icon" href="{{ site.images_dir }}/favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="{{ site.images_dir }}/icon.png" type="image/png" />
 <link href="{{ site.baseurl }}{{ site.css_dir }}/style.css" rel="stylesheet" />
